@@ -175,6 +175,7 @@ export class HomeModule { }
 * Input
 * Modal
 * Navbar
+* Pagination
 * Parallax
 * Progress
 * Radio-Button
