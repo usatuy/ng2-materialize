@@ -81,7 +81,7 @@ export class MzInjectionService {
       return this.container;
     }
 
-    const rootComponents = this.applicationRef['_rootComponents'];
+    const rootComponents = this.applicationRef['components'];
     if (rootComponents.length) {
       return rootComponents[0];
     }
