@@ -30,9 +30,9 @@
     "ng": "ng",
     "start": "cd demo-app && npm start",
     "test": "ng test",
-    "prebuild": "rimraf -- dist inline-template src/node_modules",
-    "build": "gulp inline-template && ngc -p src/tsconfig.lib.json",
-    "postbuild": "rimraf -- src/inline-template src/node_modules",
+    "preinstall": "rimraf -- dist inline-template src/node_modules",
+    "install": "gulp inline-template && ngc -p src/tsconfig.lib.json",
+    "postinstall": "rimraf -- src/inline-template src/node_modules",
     "heroku-postbuild": "cd demo-app && yarn install && yarn run build:prod"
   },
   "dependencies": {
